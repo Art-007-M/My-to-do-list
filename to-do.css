@@ -1,0 +1,106 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(95deg, hotpink, aliceblue)
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    border: solid hotpink 4px;
+    border-radius: 3px;
+    height: 50vh;
+    width: 50%; 
+    margin-top: 5%;
+    border-radius: 8px;
+    /* box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.7); */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+
+}
+
+#resposta {
+    width: 40%;
+    height: 5vh;
+    border: solid 4px hotpink;
+    background-color: aliceblue;
+    border-radius: 18px;
+    text-align: center;
+}
+
+.env-1 {
+    background-color: aliceblue;
+    color: black;
+    border-radius: 8px;
+    border: solid 3px hotpink;
+    /* box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.7); */
+    width: 20%;
+    height: 4vh;
+    margin: 20px;
+    font-family: sans-serif;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+
+}
+
+.env-1:hover {
+    font-size: larger;
+    width: 25%;
+    height: 5vh;
+}
+
+h1 {
+    font-family: sans-serif;
+}
+
+#tarefas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    border: solid hotpink 4px;
+    height: 50vh;
+    width: 50%; 
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+
+    /* box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.7); */
+}
+
+.tarefa {
+    border: solid hotpink 4px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between; /* texto à esquerda, botões à direita */
+    align-items: center;
+    padding: 10px;
+    margin: 10px 0;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+}
+
+.tarefa span {
+    flex: 1; /* ocupa espaço, empurrando os botões para a direita */
+    font-family: sans-serif;
+}
+
+.tarefa button {
+    margin-left: 10px;
+    padding: 5px 10px;
+    border-radius: 6px;
+    border: solid 3px hotpink;
+    background-color: aliceblue;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+
+}
+
+.tarefa button:hover {
+    background-color: hotpink;
+    color: white;
+}
