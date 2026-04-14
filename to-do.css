@@ -58,9 +58,9 @@ h1 {
 
 #tarefas {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    flex-direction: row;
     padding: 10px;
     border: solid hotpink 4px;
     height: 50vh;
@@ -68,7 +68,7 @@ h1 {
     margin: 20px;
     border-radius: 8px;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
-
+    flex-wrap: wrap; /*não tem efeito se o flex-direction for column
     /* box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.7); */
 }
 
@@ -81,11 +81,15 @@ h1 {
     padding: 10px;
     margin: 10px 0;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+    flex: 1 1 200px;
+    max-width: 90%;
 }
 
 .tarefa span {
     flex: 1; /* ocupa espaço, empurrando os botões para a direita */
     font-family: sans-serif;
+    overflow-wrap: break-word;
+    white-space: normal; /*permite quebra de linhas conforme o necessário*/
 }
 
 .tarefa button {

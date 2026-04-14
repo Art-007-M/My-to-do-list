@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="to-do.css">
-    <script src="to-do.js"></script>
+    <script src="to-do.js" defer></script>
     <title>MY TO DO LIST</title>
 </head>
-<body>
+<body onload="carregarTarefas()">
     <div class="container">
-        <h1>O QUE VAI SER HOJE?</h1>
+        <h1>MISSÕES PARA HOJE</h1>
         <input type="text" id="resposta" placeholder="Vamos lá!">
         <button onclick="enviar()" class="env-1">Criar</button>
     </div>
